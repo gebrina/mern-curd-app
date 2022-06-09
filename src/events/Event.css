@@ -1,0 +1,165 @@
+.event-section{
+    height: 50vh;
+    position: relative;
+    border: .5px  solid red;
+    top:10px;
+    box-shadow: .5px .5px 25px green;
+    border-radius: 10px;
+    width: 90vw;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(16px 16px 20px red) invert(100%);
+}
+
+.title-div{
+    box-shadow: .5px .5px 5px dodgerblue;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+
+}
+
+.event-title{
+    color: rgb(17, 1, 1);
+}
+
+.event-form{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ align-items: flex-end;    
+ position: relative;
+ top:20vh;
+}
+
+.form-group{
+    background-color: transparent;
+    margin: 10px;
+}
+
+.form-group input{
+    height: 30px;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 2.5px;
+    text-transform: capitalize;
+    border: .5px solid black;
+    box-shadow: .5px .5px 5px dodgerblue;
+}
+
+.form-group input::placeholder{
+    color: black;
+    text-shadow: .5px .5px .5px red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button{
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+    transition:all .6s ease-in-out;
+    box-shadow: .5px .5px 5px red;
+    margin-right: 20px;
+    border-radius: 1px;
+}
+
+button:hover{
+    cursor: pointer;
+    display: block;
+    background-color: white;
+    transform: scale(1.1);
+
+    border: .5px solid black;
+}
+
+.form-group input:focus{
+    background-color: white;
+}
+
+@media  (max-width:600px) {
+    .event-form{
+        display: grid;
+        grid-template-columns: 1fr;
+        top: 0;
+    }
+    button{
+        width: 50%;
+        margin:  0 auto;
+    }
+}
+
+.events-card{
+    width: 90vw;
+    display: flex;
+    margin:  0 auto;
+}
+
+.event-card{
+    height: 50%;
+    background-color: white;
+    width: 33%;
+    border-radius: 20px;
+    margin-right: 10px;
+    box-shadow: 1.5px 1.5px 20px green;
+    transition: all .5s ease-in-out;
+}
+
+.event-card:hover{
+    box-shadow: .5px .5px 5px green;
+}
+.event-card>div{
+    background-color:lightblue;
+    box-shadow: 5px 5px 8px dodgerblue;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+.event-title{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.event-time{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.event-date{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.event-card>div{
+    box-shadow: .5px .5px 2px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 90%;
+    border-top: 16px solid dodgerblue;
+    border-bottom: 16px solid dodgerblue;
+    box-shadow : 10px 10px 100px blue;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
